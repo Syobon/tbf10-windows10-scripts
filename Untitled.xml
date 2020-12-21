@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<unattend xmlns="urn:schemas-microsoft-com:unattend">
+    <settings pass="generalize">
+        <component name="Microsoft-Windows-Security-SPP" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <SkipRearm>1</SkipRearm>
+        </component>
+    </settings>
+    <settings pass="specialize">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <AutoLogon>
+                <Password />
+            </AutoLogon>
+            <ClientApplications />
+            <DesktopOptimization />
+            <Display />
+            <NotificationArea>
+                <PromotedIcon1 />
+                <PromotedIcon2 />
+            </NotificationArea>
+            <OEMInformation />
+            <OEMWelcomeCenter />
+            <OEMWelcomeCenterLinks />
+            <StartPanelLinks />
+            <StartTiles>
+                <LockScreen>
+                    <Badge />
+                </LockScreen>
+                <WideTiles>
+                    <WideTile1 />
+                    <WideTile2 />
+                    <WideTile3 />
+                    <WideTile4 />
+                    <WideTile5 />
+                    <WideTile6 />
+                </WideTiles>
+                <SquareTiles>
+                    <SquareTile1 />
+                    <SquareTile2 />
+                    <SquareTile3 />
+                    <SquareTile4 />
+                    <SquareTile5 />
+                    <SquareTile6 />
+                    <SquareTile7 />
+                    <SquareTile8 />
+                    <SquareTile9 />
+                    <SquareTile10 />
+                    <SquareTile11 />
+                    <SquareTile12 />
+                    <SquareOrDesktopTile1 />
+                    <SquareOrDesktopTile2 />
+                    <SquareOrDesktopTile3 />
+                    <SquareOrDesktopTile4 />
+                    <SquareOrDesktopTile5 />
+                    <SquareOrDesktopTile6 />
+                    <SquareOrDesktopTile7 />
+                    <SquareOrDesktopTile8 />
+                    <SquareOrDesktopTile9 />
+                    <SquareOrDesktopTile10 />
+                    <SquareOrDesktopTile11 />
+                    <SquareOrDesktopTile12 />
+                </SquareTiles>
+                <RegionalOverrides />
+            </StartTiles>
+            <TaskbarLinks />
+            <Themes />
+            <WindowsFeatures />
+            <CopyProfile>true</CopyProfile>
+            <ProductKey>W269N-WFGWX-YVC9B-4J6C9-T83GX</ProductKey>
+        </component>
+    </settings>
+    <settings pass="oobeSystem">
+        <component name="Microsoft-Windows-Shell-Setup" processorArchitecture="amd64" publicKeyToken="31bf3856ad364e35" language="neutral" versionScope="nonSxS" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <AutoLogon>
+                <Password>
+                    <Value>UABhAHMAcwB3ADAAcgBkACEAUABhAHMAcwB3AG8AcgBkAA==</Value>
+                    <PlainText>false</PlainText>
+                </Password>
+                <Enabled>true</Enabled>
+                <LogonCount>1</LogonCount>
+                <Username>setupuser</Username>
+            </AutoLogon>
+            <ClientApplications />
+            <DesktopOptimization />
+            <Display />
+            <FirstLogonCommands>
+                <SynchronousCommand wcm:action="add">
+                    <CommandLine>powershell.exe -ExecutionPolicy Bypass -File "C:\work\scripts\stage.ps1"</CommandLine>
+                    <Order>1</Order>
+                </SynchronousCommand>
+            </FirstLogonCommands>
+            <FolderLocations />
+            <LogonCommands />
+            <OEMInformation />
+            <OEMWelcomeCenter />
+            <OEMWelcomeCenterLinks />
+            <OOBE>
+                <VMModeOptimizations />
+                <HideEULAPage>true</HideEULAPage>
+                <NetworkLocation>Other</NetworkLocation>
+                <ProtectYourPC>3</ProtectYourPC>
+            </OOBE>
+            <StartPanelLinks />
+            <StartTiles>
+                <LockScreen>
+                    <Badge />
+                </LockScreen>
+                <WideTiles>
+                    <WideTile1 />
+                    <WideTile2 />
+                    <WideTile3 />
+                    <WideTile4 />
+                    <WideTile5 />
+                    <WideTile6 />
+                </WideTiles>
+                <SquareTiles>
+                    <SquareTile1 />
+                    <SquareTile2 />
+                    <SquareTile3 />
+                    <SquareTile4 />
+                    <SquareTile5 />
+                    <SquareTile6 />
+                    <SquareTile7 />
+                    <SquareTile8 />
+                    <SquareTile9 />
+                    <SquareTile10 />
+                    <SquareTile11 />
+                    <SquareTile12 />
+                    <SquareOrDesktopTile1 />
+                    <SquareOrDesktopTile2 />
+                    <SquareOrDesktopTile3 />
+                    <SquareOrDesktopTile4 />
+                    <SquareOrDesktopTile5 />
+                    <SquareOrDesktopTile6 />
+                    <SquareOrDesktopTile7 />
+                    <SquareOrDesktopTile8 />
+                    <SquareOrDesktopTile9 />
+                    <SquareOrDesktopTile10 />
+                    <SquareOrDesktopTile11 />
+                    <SquareOrDesktopTile12 />
+                </SquareTiles>
+                <RegionalOverrides />
+            </StartTiles>
+            <TaskbarLinks />
+            <Themes />
+            <UserAccounts>
+                <AdministratorPassword />
+                <LocalAccounts>
+                    <LocalAccount wcm:action="add">
+                        <Password>
+                            <Value>UABhAHMAcwB3ADAAcgBkACEAUABhAHMAcwB3AG8AcgBkAA==</Value>
+                            <PlainText>false</PlainText>
+                        </Password>
+                        <Description>管理者ユーザー</Description>
+                        <Group>Administrators</Group>
+                        <Name>setupuser</Name>
+                    </LocalAccount>
+                </LocalAccounts>
+                <DomainAccounts />
+            </UserAccounts>
+            <VisualEffects />
+            <WindowsFeatures />
+        </component>
+    </settings>
+    <cpi:offlineImage cpi:source="wim://kongo/datastorewin10_20h2/sources/install.wim#Windows 10 Pro" xmlns:cpi="urn:schemas-microsoft-com:cpi" />
+</unattend>
